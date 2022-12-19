@@ -1,0 +1,25 @@
+### application
+
+GET http://localhost:5000/ HTTP/1.1
+
+
+### manager
+
+POST http://localhost:5002/update HTTP/1.1
+content-type: application/json
+auth: very-secure-token
+
+{
+    "url":"http://file_server:5001/download-update/app-update.zip", 
+    "target": "app", 
+    "digest": "ad48dc815357f743ff07f86fd2e5a209ae6ddbb6a92df960aee85b6f3e58a246", 
+    "digest_alg": "sha256"
+}
+
+
+### get update digest
+GET http://localhost:5001/get-digest/app-update.zip HTTP/1.1
+
+### get archived update file
+GET http://localhost:5001/download-update/app-update.zip HTTP/1.1
+
