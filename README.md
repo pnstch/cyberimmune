@@ -1,6 +1,6 @@
 # Secure update
 Отредактирован app-update.py 
 В get update digest файла requests.rest file отправить GET request, из request скопировать sha256 и вставить в update POST request в раздел manager section в requests.rest
-Красными стрелками выделены векторы атаки!
+Красными стрелками выделены векторы атаки
+![scheme3 drawio (3)](https://user-images.githubusercontent.com/85806007/209093229-9f9d7cf9-070d-4735-8faa-dd5bc7e92ba2.png)
 
-(https://user-images.githubusercontent.com/85806007/209093091-9c60e82e-c3c3-4c1e-afab-2cf487e030d5.png)
